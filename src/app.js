@@ -5,7 +5,7 @@ const createWindow = () => {
     width: 1200,
     height: 800,
   })
-  win.loadURL('https://www.baidu.com').then();
+  win.loadURL('http://localhost:3001').then();
 }
 
 app.whenReady().then(() => {
