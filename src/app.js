@@ -7,7 +7,7 @@ const createWindow = () => {
     height: 800,
   });
   // win.loadURL('http://localhost:3002/basic/').then();
-  win.loadFile(path.resolve(__dirname, 'window/basic/index.html')).then();
+  win.loadFile(path.resolve(__dirname, 'window/basic.html')).then();
   win.webContents.toggleDevTools();
 };
 

@@ -12,11 +12,11 @@ export default defineConfig({
   },
   build: {
     outDir: '../src/window',
-    assetsDir: './',
+    assetsDir: './assets',
     rollupOptions: {
       input: {
-        basic: 'window/basic/index.html',
-        commodity: 'window/commodity/index.html',
+        basic: './window/basic.html',
+        commodity: './window/commodity.html',
       },
       // output: {
       //   assetFileNames: 'jjj',
