@@ -1,10 +1,10 @@
 import {defineConfig} from "vite";
 import path from "path";
 import vue from '@vitejs/plugin-vue';
-import resolve from "rollup-plugin-node-resolve";
+import alias from "@rollup/plugin-alias";
 
 export default defineConfig({
-  plugins: [vue(), resolve()],
+  plugins: [alias(), vue()],
   root: 'window',
   server: {
     port: 3000,
@@ -16,6 +16,6 @@ export default defineConfig({
         basic: path.resolve(__dirname, 'window/basic/index.html'),
         commodity: path.resolve(__dirname, 'window/commodity/index.html')
       },
-    }
-  }
-})
+    },
+  },
+});
