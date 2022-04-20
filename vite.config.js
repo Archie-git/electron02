@@ -5,17 +5,23 @@ import alias from "@rollup/plugin-alias";
 
 export default defineConfig({
   plugins: [alias(), vue()],
-  root: 'window',
+  root: './window',
+  base: './',
   server: {
     port: 3000,
   },
   build: {
     outDir: '../src/window',
+    assetsDir: './',
     rollupOptions: {
       input: {
-        basic: path.resolve(__dirname, 'window/basic/index.html'),
-        commodity: path.resolve(__dirname, 'window/commodity/index.html')
+        basic: 'window/basic/index.html',
+        commodity: 'window/commodity/index.html',
       },
+      // output: {
+      //   assetFileNames: 'jjj',
+      // },
     },
+    emptyOutDir: true,
   },
 });

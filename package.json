@@ -17,8 +17,8 @@
   "scripts": {
     "start": "vite & electron .",
     "lint": "eslint 'src/**/*.{ts,vue}'",
-    "build": "vue-tsc --noEmit && vite build --emptyOutDir",
-    "dist": "vue-tsc --noEmit && vite build --emptyOutDir && electron-builder"
+    "build": "vue-tsc --noEmit && vite build",
+    "dist": "vue-tsc --noEmit && vite build && electron-builder"
   },
   "repository": {
     "type": "git",
