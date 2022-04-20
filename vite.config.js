@@ -1,9 +1,10 @@
 import {defineConfig} from "vite";
-import vue from '@vitejs/plugin-vue'
 import path from "path";
+import vue from '@vitejs/plugin-vue';
+import resolve from "rollup-plugin-node-resolve";
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), resolve()],
   root: 'window',
   server: {
     port: 3000,
