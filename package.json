@@ -1,0 +1,24 @@
+{
+  "name": "electron02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Archie-git/electron02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Archie-git/electron02/issues"
+  },
+  "homepage": "https://github.com/Archie-git/electron02#readme",
+  "devDependencies": {
+    "electron": "^18.0.4"
+  }
+}
